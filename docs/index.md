@@ -124,6 +124,6 @@ You might notice that `staticMethod` has a `.` instead of `::`. This is the reve
 ClassName.staticMethod(1, 2, "hi");
 
 let anInstance = ClassName();
-// This fails! Static methods ned to be called on the class.
+// This fails! Static methods need to be called on the class.
 #anInstance.staticMethod(1, 2, "hi");
 ```
