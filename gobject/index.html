@@ -1,0 +1,728 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.6">
+    
+    
+      
+        <title>The GObject - JSGraphics</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
+      
+      
+    
+    
+
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+      <link rel="stylesheet" href="../css/extra.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#the-gobject" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="JSGraphics" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                JSGraphics
+              </span>
+              <span class="md-header-nav__topic">
+                The GObject
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href=".." title="Home" class="md-tabs__link">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="./" title="Graphics Objects" class="md-tabs__link md-tabs__link--active">
+          Graphics Objects
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../util/gpoint/" title="Utility Objects" class="md-tabs__link">
+          Utility Objects
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="JSGraphics" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    JSGraphics
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../gwindow/" title="The GWindow" class="md-nav__link">
+      The GWindow
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../gmath/" title="GMath" class="md-nav__link">
+      GMath
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Graphics Objects
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Graphics Objects
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        The GObject
+      </label>
+    
+    <a href="./" title="The GObject" class="md-nav__link md-nav__link--active">
+      The GObject
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#factory-functions" title="Factory Functions" class="md-nav__link">
+    Factory Functions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods" title="Methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gobjects/gline/" title="GLine" class="md-nav__link">
+      GLine
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gobjects/grect/" title="GRect" class="md-nav__link">
+      GRect
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gobjects/goval/" title="GOval" class="md-nav__link">
+      GOval
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gobjects/gpolygon/" title="GPolygon" class="md-nav__link">
+      GPolygon
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gobjects/garc/" title="GArc" class="md-nav__link">
+      GArc
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gobjects/glabel/" title="GLabel" class="md-nav__link">
+      GLabel
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gobjects/gcompound/" title="GCompound" class="md-nav__link">
+      GCompound
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gobjects/gimage/" title="GImage" class="md-nav__link">
+      GImage
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Utility Objects
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Utility Objects
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../util/gpoint/" title="GPoint" class="md-nav__link">
+      GPoint
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../util/gdimension/" title="GDimension" class="md-nav__link">
+      GDimension
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../util/grectangle/" title="GRectangle" class="md-nav__link">
+      GRectangle
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../util/gtransform/" title="GTransform" class="md-nav__link">
+      GTransform
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#factory-functions" title="Factory Functions" class="md-nav__link">
+    Factory Functions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods" title="Methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="the-gobject">The GObject</h1>
+<p>The GObject is the base object (i.e. the common superclass) for all other
+graphics objects. Any abstract method seen here can be called on any other (more specific) graphics object,
+but not on a generic GObject.</p>
+<p>GObject is an abstract class -- if you try to make one directly, you'll have to fill in the abstract methods.</p>
+<h2 id="factory-functions">Factory Functions</h2>
+<dl>
+<dt><em>function</em> <span class="declaration">GObject</span>()</dt>
+<dd>Creates an empty <code>GObject</code>. You probably shouldn't be using this.</dd>
+</dl>
+<h2 id="methods">Methods</h2>
+<dl>
+<dt><em><span class="abstract">abstract</span> function</em> GObject::<span class="declaration">getBounds</span>()</dt>
+<dd>Returns a <a href="../util/grectangle/">GRectangle</a> representing the smallest box that covers everything
+this GObject covers.</dd>
+<dt><em>function</em> GObject::<span class="declaration">setLocation</span>([x[, y]])</dt>
+<dd>Sets this GObject's location in the window to (<span class="parameter">x</span>, <span class="parameter">y</span>). If <code>undefined</code> is passed in instead of a number for
+either <span class="parameter">x</span> and/or <span class="parameter">y</span>, it defaults to the object's current location.</dd>
+<dt><em>function</em> GObject::<span class="declaration">getLocation</span>()</dt>
+<dd><strong>Returns:</strong> A <a href="../util/gpoint/">GPoint</a> representing the origin of this object.</dd>
+<dt><em>function</em> GObject::<span class="declaration">getX</span>()</dt>
+<dd><strong>Returns:</strong> The x coordinate of this object's origin.</dd>
+<dt><em>function</em> GObject::<span class="declaration">getY</span>()</dt>
+<dd><strong>Returns:</strong> The y coordinate of this object's origin.</dd>
+<dt><em>function</em> GObject::<span class="declaration">move</span>(dx, dy)</dt>
+<dd>Moves this object by the displacements <span class="parameter">dx</span> and <span class="parameter">dy</span></dd>
+<dt id="movePolar"><em>function</em> GObject::<span class="declaration">movePolar</span>(r, theta)</dt>
+<dd>Moves this object <span class="parameter">r</span> units in the direction <span class="parameter">theta</span>. <span class="parameter">theta</span> is measured in <em>degrees clockwise
+from the +x axis</em>.</dd>
+<dt><em><span class="abstract">abstract</span> function</em> GObject::<span class="declaration">getSize</span>()</dt>
+<dd><strong>Returns:</strong> The size of this object as a <a href="../util/gdimension/">GDimension</a>.</dd>
+<dt><em><span class="abstract">abstract</span> function</em> GObject::<span class="declaration">getWidth</span>()</dt>
+<dd><strong>Returns:</strong> The width of this object as a number.</dd>
+<dt><em><span class="abstract">abstract</span> function</em> GObject::<span class="declaration">getHeight</span>()</dt>
+<dd><strong>Returns:</strong> The height of this object as a number.</dd>
+<dt><em><span class="abstract">abstract</span> function</em> GObject::<span class="declaration">contains</span>(x, y)</dt>
+<dd><strong>Returns:</strong> <code>true</code> if this object contains the given <span class="parameter">x</span> and <span class="parameter">y</span> coordinates, and <code>false</code> otherwise.</dd>
+<dt><em>function</em> GObject::<span class="declaration">sendToFront</span>()</dt>
+<dd>Puts this object on top of all other objects in its attached container. Fails if this object isn't in a container.</dd>
+<dd><strong>See Also:</strong> <a href="../gwindow/">GWindow</a>, <a href="../gobjects/gcompound/">GCompound</a></dd>
+<dt><em>function</em> GObject::<span class="declaration">sendToBack</span>()</dt>
+<dd>Puts this object behind all other objects in its attached container. Fails if this object isn't in a container.</dd>
+<dd><strong>See Also:</strong> <a href="../gwindow/">GWindow</a>, <a href="../gobjects/gcompound/">GCompound</a></dd>
+<dt><em>function</em> GObject::<span class="declaration">sendForward</span>()</dt>
+<dd>Moves this object one "step" towards the front of its container. Fails if this object isn't in a container.</dd>
+<dd><strong>See Also:</strong> <a href="../gwindow/">GWindow</a>, <a href="../gobjects/gcompound/">GCompound</a></dd>
+<dt><em>function</em> GObject::<span class="declaration">sendBackward</span>()</dt>
+<dd>Moves this object one "step" towards the back of its container. Fails if this object isn't in a container.</dd>
+<dd><strong>See Also:</strong> <a href="../gwindow/">GWindow</a>, <a href="../gobjects/gcompound/">GCompound</a></dd>
+<dt id="setColor"><em>function</em> GObject::<span class="declaration">setColor</span>(color)</dt>
+<dd>Sets the border <span class="parameter">color</span> of this object. If the object is filled and hasn't been specifically
+assigned a fill color, also sets the fill color.</dd>
+<dd><span class="parameter">color</span> may be a predefined Javascript color (e.g. <code>"Red"</code>), or it may be a string in the form <code>"#RRGGBB</code>,
+where RR, GG, and BB are the hexadecimal values of the red, green, and blue intensities.</dd>
+<dt><em>function</em> GObject::<span class="declaration">getColor</span>()</dt>
+<dd><strong>Returns:</strong> The color of the object as previously set.</dd>
+<dt><em>function</em> GObject::<span class="declaration">setFillColor</span>(color)</dt>
+<dd>Sets the fill <span class="parameter">color</span> of this object specifically. <span class="parameter">color</span>'s format matches that of <a href="#setColor">GObject::setColor</a>.</dd>
+<dd><strong>See Also:</strong> <a href="#setColor">GObject::setColor</a></dd>
+<dt><em>function</em> GObject::<span class="declaration">setFilled</span>(flag)</dt>
+<dd>Sets this object to be filled if <code>flag</code> is true, or not filled if <code>flag</code> is false.</dd>
+<dt><em>function</em> GObject::<span class="declaration">isFilled</span>()</dt>
+<dd><strong>Returns:</strong> <code>true</code> if this object is filled, <code>false</code> otherwise.</dd>
+<dt><em>function</em> GObject::<span class="declaration">setLineWidth</span>(width)</dt>
+<dd>Sets this object's lines to be <span class="parameter">width</span> units wide.</dd>
+<dt><em>function</em> GObject::<span class="declaration">getLineWidth</span>()</dt>
+<dd><strong>Returns:</strong> The width of this object's lines as a number.</dd>
+<dt id="rotate"><em>function</em> GObject::<span class="declaration">rotate</span>(theta)</dt>
+<dd>Rotates this object by <span class="parameter">theta</span> degrees around its origin.</dd>
+<dd>Marks the object as transformed.</dd>
+<dt id="scale"><em>function</em> GObject::<span class="declaration">scale</span>(multiplier)</dt>
+<dd></dd>
+<dt><em>function</em> GObject::<span class="declaration">scale</span>(xMultiplier, yMultiplier)</dt>
+<dd>Scales this object. If an individual <span class="parameter">xMultiplier</span> and <span class="parameter">yMultiplier</span> are specified, scales the x and y
+axes differently as specified. If a single <span class="parameter">multiplier</span> is specified, scales both x and y by that multiplier.</dd>
+<dd>Marks the object as transformed.</dd>
+<dt id="shear"><em>function</em> GObject::<span class="declaration">shear</span>(xShear, yShear)</dt>
+<dd>Applies an affine shear transformation to this object, using scale factors <span class="parameter">xShear</span> and <span class="parameter">yShear</span>.</dd>
+<dd>Marks the object as transformed.</dd>
+<dt id="translate"><em>function</em> GObject::<span class="declaration">translate</span>(xTransform, yTransform)</dt>
+<dd>Translates the display of the object by <span class="parameter">xTransform</span> and <span class="parameter">yTransform</span> before it is displayed, <strong>without</strong> changing
+the object's origin.</dd>
+<dd>Marks the object as transformed.</dd>
+<dt><em>function</em> GObject::<span class="declaration">setVisible</span>(flag)</dt>
+<dd>Makes the object visible if <span class="parameter">flag</span> is <code>true</code>, and invisible if <span class="parameter">flag</span> is <code>false</code>.</dd>
+<dt><em>function</em> GObject::<span class="declaration">isVisible</span>()</dt>
+<dd><strong>Returns:</strong> <code>true</code> if the object is visible, <code>false</code> otherwise.</dd>
+</dl>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../gmath/" title="GMath" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                GMath
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../gobjects/gline/" title="GLine" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                GLine
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.5e60981f.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

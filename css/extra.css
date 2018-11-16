@@ -1,0 +1,42 @@
+.declaration {
+    color: black;
+}
+
+.parameter {
+    color: #2980B9;
+    font-weight: bold;
+}
+
+.abstract {
+    color: #31b95f;
+}
+
+.extends {
+    color: #b8181d;
+}
+
+.static {
+    color: #b87b14;
+}
+
+.const {
+    color: #7b21b8;
+}
+
+.md-typeset pre {
+    margin: 0 !important;
+}
+
+dt {
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: rgb(41, 128, 185);
+    background-color: rgb(231, 232, 250);
+    -webkit-background-origin: padding-box;
+    background-origin: padding-box;
+    padding: 6px;
+    border-top: 3px solid rgb(106, 176, 222);
+    margin: 2px;
+}
