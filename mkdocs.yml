@@ -38,3 +38,10 @@ markdown_extensions:
   - mdx_csshelper
 extra_css:
   - 'css/extra.css'
+site_url: 'https://jdkula.github.io/jsgraphics-docs'
+repo_name: 'jdkula/jsgraphics-docs'
+repo_url: 'https://github.com/jdkula/jsgraphics-docs'
+edit_uri: 'blob/master/docs/'
+site_author: 'Jonathan Kula'
+google_analytics: ['UA-129314970-1', 'jdkula.github.io/jsgraphics-docs']
+copyright: 'This Documentation Courtesy of Jonathan Kula'
