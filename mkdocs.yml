@@ -1,0 +1,40 @@
+site_name: JSGraphics
+nav:
+  - Home: index.md
+  - The GWindow: gwindow.md
+  - GMath: gmath.md
+  - Graphics Objects:
+    - The GObject: gobject.md
+    - GLine: 'gobjects/gline.md'
+    - GRect: 'gobjects/grect.md'
+    - GOval: 'gobjects/goval.md'
+    - GPolygon: 'gobjects/gpolygon.md'
+    - GArc: 'gobjects/garc.md'
+    - GLabel: 'gobjects/glabel.md'
+    - GCompound: 'gobjects/gcompound.md'
+    - GImage: 'gobjects/gimage.md'
+  - Utility Objects:
+    - GPoint: 'util/gpoint.md'
+    - GDimension: 'util/gdimension.md'
+    - GRectangle: 'util/grectangle.md'
+    - GTransform: 'util/gtransform.md'
+theme:
+  name: 'material'
+  custom_dir: 'html/'
+  feature:
+    tabs: true
+markdown_extensions:
+  - tables
+  - def_list
+  - admonition
+  - fenced_code
+  - attr_list
+  - codehilite:
+      noclasses: True
+      linenums: True
+  - mdx_emdash
+  - mdx_math
+  - mdx_custom_span_class
+  - mdx_csshelper
+extra_css:
+  - 'css/extra.css'
