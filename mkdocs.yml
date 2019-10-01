@@ -34,7 +34,7 @@ markdown_extensions:
       linenums: True
   - mdx_emdash
   - mdx_math
-  - mdx_custom_span_class
+  - custom-span-class
   - mdx_csshelper
 extra_css:
   - 'css/extra.css'

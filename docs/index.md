@@ -2,13 +2,14 @@ JSGraphics
 ==========
 
 The JSGraphics library can be used to easily manipulate an HTML5 Canvas, and 
-is used by Stanford's <a href="https://cs106aj.stanford.edu" target="_blank">CS106AJ</a> curriculum.
+is used by Stanford's <a href="https://cs106aj.stanford.edu" target="_blank">CS106AJ</a> 
+and <a href="https://cs106ax.stanford.edu" target="_blank">CS106AX</a> curricula.
 
 For students: How to read this documentation
 ---------------------------------------------
 This document is intended to read like documentation you might find for any library online.
 It's a good thing to be able to read it, and see what such documentation might look like.
-If you're ever creating much larger projects, you're very likely to be reading documentation
+If you're ever working on larger projects, you're very likely to be reading documentation
 just like this!
 
 Because this is likely the first time you're looking at documentation like this, you'll
@@ -29,6 +30,7 @@ Abstract Method | A method inside an abstract class that's not defined (i.e. tha
 Static Method | A method that's part of a *class*, not its instances. You can only call static methods on the class itself.
 Field (a.k.a. Instance Variable) | A variable that's part of a class's instances. Each instance of a class will have its own values for each field, and instances don't share fields. It follows, then that you can only access fields from an instance of a class.
 Static Field | A variable that's part of a *class*, not its instances. You can only access a static field on the class itself.
+Const | Short for *constant*. It means the value shouldn't ever be modified.
 
 #### Vocabulary Example:
 
@@ -106,7 +108,14 @@ or this:
 :   We have zero required parameters here! You'll notice that we have brackets in brackets.
     That just means that if we want to give @p.param3, we have to also give @p.param1 and @p.param2.
     It also means that @p.param1 and @p.param2 have to be together (if you include one, you have
-    to include both. No parameter left behind! ...except for @p.param3, possibly).
+    to include both. Here's an example:
+    
+```javascript
+ClassName.staticMethod()        // OK! All parameters are optional.
+ClassName.staticMethod(1)       // Won't work! Either both or neither of param1 or param2 need to be specified.
+ClassName.staticMethod(1, 2)    // OK! param3 is optional, even when param1 and param2 are specified.
+ClassName.staticMethod(1, 2, 3) // OK! We've now given all optional parameters.
+```
 
 Something you might notice that you haven't seen before is the `::` in `ClassName::methodName`.
 This just means that `methodName` is a *method* of `ClassName`, and you can't actually call it directly. Example:

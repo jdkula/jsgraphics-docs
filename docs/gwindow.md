@@ -1,6 +1,11 @@
 The GWindow
 ===========
 
+The GWindow is an HTML5 Canvas that you can use other JSGraphics library functions
+with. Greatly simplifies the process of working with Canvases.
+
+Meant to mimic the graphics libraries from CS106A's Java curriculum.
+
 Factory Functions
 -----------------
 

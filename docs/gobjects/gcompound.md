@@ -16,7 +16,7 @@ Factory Functions
 
 Methods
 --------
-*function* GCompound::@d.add(gObject[x=@p.gObject.getX(), y=@p.gObject.getY()])
+*function* GCompound::@d.add(gObject[, x=@p.gObject.getX(), y=@p.gObject.getY()])
 :   Adds the given @p.gObject to the compound. If @p.x and @p.y are specified,
     the @p.gObject's x and y values are overwritten; otherwise, they're used instead.
 

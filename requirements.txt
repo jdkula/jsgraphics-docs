@@ -1,0 +1,7 @@
+mkdocs
+mkdocs-material
+markdown-emdash
+pygments
+python-markdown-math
+mdx-custom-span-class
+./csshelper
