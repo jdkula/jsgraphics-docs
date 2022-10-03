@@ -57,7 +57,7 @@ Methods
     or [GObject](../gobject.md).
 
 *function* GImage::@d.setSize(width, height)
-:   Sets this GOval's @p.width and @p.height as specified.
+:   Sets this GImage's @p.width and @p.height as specified.
 
 *function* GImage::@d.setBounds(object)
 :   Sets this GImage's x/y/width/height to match that of the passed-in @p.object
