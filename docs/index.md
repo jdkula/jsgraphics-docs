@@ -16,6 +16,10 @@ Because this is likely the first time you're looking at documentation like this,
 see some notation and vocabulary you haven't seen before. I'll briefly go over this
 so you this documentation will be useful to you!
 
+The vocabulary and examples below use knowledge that may come a bit later in the quarter;
+feel free to ask on Ed or in office hours if you need help interpreting any of the 
+documentation.
+
 ### Vocabulary
 Some of these definitions may seem scary at first. Don't worry, I'll give an example below.
 
@@ -77,7 +81,7 @@ let a3 = ClassA.fromString("5, 6");
 console.log(a3.addTogether());  // Prints 11
 
 // Now, you can't call static methods from instances! This will crash!
-#a1.fromString("7, 8");
+a1.fromString("7, 8");  // ERROR ERROR
 
 function ClassB(x, y, z) {  // Factory function for ClassB
     let aInstance = ClassA(x, y);  // We're extending ClassA here!
@@ -134,5 +138,5 @@ ClassName.staticMethod(1, 2, "hi");
 
 let anInstance = ClassName();
 // This fails! Static methods need to be called on the class.
-#anInstance.staticMethod(1, 2, "hi");
+anInstance.staticMethod(1, 2, "hi");   // ERROR ERROR
 ```
