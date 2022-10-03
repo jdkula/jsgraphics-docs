@@ -673,6 +673,9 @@ just like this!</p>
 <p>Because this is likely the first time you're looking at documentation like this, you'll
 see some notation and vocabulary you haven't seen before. I'll briefly go over this
 so you this documentation will be useful to you!</p>
+<p>The vocabulary and examples below use knowledge that may come a bit later in the quarter;
+feel free to ask on Ed or in office hours if you need help interpreting any of the 
+documentation.</p>
 <h3 id="vocabulary">Vocabulary</h3>
 <p>Some of these definitions may seem scary at first. Don't worry, I'll give an example below.</p>
 <table>
@@ -823,7 +826,7 @@ console.log(a2.addTogether());<span style="color: #bbbbbb">  </span><span style=
 console.log(a3.addTogether());<span style="color: #bbbbbb">  </span><span style="color: #3D7B7B; font-style: italic">// Prints 11</span><span style="color: #bbbbbb"></span>
 
 <span style="color: #3D7B7B; font-style: italic">// Now, you can&#39;t call static methods from instances! This will crash!</span><span style="color: #bbbbbb"></span>
-<span style="border: 1px solid #FF0000">#</span>a1.fromString(<span style="color: #BA2121">&quot;7, 8&quot;</span>);<span style="color: #bbbbbb"></span>
+a1.fromString(<span style="color: #BA2121">&quot;7, 8&quot;</span>);<span style="color: #bbbbbb">  </span><span style="color: #3D7B7B; font-style: italic">// ERROR ERROR</span><span style="color: #bbbbbb"></span>
 
 <span style="color: #008000; font-weight: bold">function</span><span style="color: #bbbbbb"> </span>ClassB(x,<span style="color: #bbbbbb"> </span>y,<span style="color: #bbbbbb"> </span>z)<span style="color: #bbbbbb"> </span>{<span style="color: #bbbbbb">  </span><span style="color: #3D7B7B; font-style: italic">// Factory function for ClassB</span><span style="color: #bbbbbb"></span>
 <span style="color: #bbbbbb">    </span><span style="color: #008000; font-weight: bold">let</span><span style="color: #bbbbbb"> </span>aInstance<span style="color: #bbbbbb"> </span><span style="color: #666666">=</span><span style="color: #bbbbbb"> </span>ClassA(x,<span style="color: #bbbbbb"> </span>y);<span style="color: #bbbbbb">  </span><span style="color: #3D7B7B; font-style: italic">// We&#39;re extending ClassA here!</span><span style="color: #bbbbbb"></span>
@@ -888,7 +891,7 @@ ClassName.staticMethod(<span style="color: #666666">1</span>,<span style="color:
 
 <span style="color: #008000; font-weight: bold">let</span><span style="color: #bbbbbb"> </span>anInstance<span style="color: #bbbbbb"> </span><span style="color: #666666">=</span><span style="color: #bbbbbb"> </span>ClassName();<span style="color: #bbbbbb"></span>
 <span style="color: #3D7B7B; font-style: italic">// This fails! Static methods need to be called on the class.</span><span style="color: #bbbbbb"></span>
-<span style="border: 1px solid #FF0000">#</span>anInstance.staticMethod(<span style="color: #666666">1</span>,<span style="color: #bbbbbb"> </span><span style="color: #666666">2</span>,<span style="color: #bbbbbb"> </span><span style="color: #BA2121">&quot;hi&quot;</span>);<span style="color: #bbbbbb"></span>
+anInstance.staticMethod(<span style="color: #666666">1</span>,<span style="color: #bbbbbb"> </span><span style="color: #666666">2</span>,<span style="color: #bbbbbb"> </span><span style="color: #BA2121">&quot;hi&quot;</span>);<span style="color: #bbbbbb">   </span><span style="color: #3D7B7B; font-style: italic">// ERROR ERROR</span><span style="color: #bbbbbb"></span>
 </code></pre></div></td></tr></table></div>
 
 
