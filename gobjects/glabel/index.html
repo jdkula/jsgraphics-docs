@@ -645,6 +645,22 @@ returned in the same format specified in <a href="#setFont">GLabel::setFont</a>.
 <dd>Sets this GLabel to display the string specified by <span class="parameter">str</span>.</dd>
 <dt><em>function</em> GLabel::<span class="declaration">getLabel</span>()</dt>
 <dd><strong>Returns:</strong> The text currently displayed by this GLabel.</dd>
+<dt><em>function</em> GLabel::<span class="declaration">getDescent</span>()</dt>
+<dd><strong>Returns:</strong> the descent of this font, which is the maximum distance characters
+extend below the baseline.  In JavaScript, this value is estimated from the point size.</dd>
+<dt id="getTextAlign"><em>function</em> GLabel::<span class="declaration">getTextAlign</span>()</dt>
+<dd><strong>Returns</strong>: the current horizontal text alignment of this font. Can take on
+any of the values noted <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/textAlign#value">here</a>,
+notably: <code>"left"</code>, <code>"right"</code>, and <code>"center"</code>. The default value is <code>"start"</code>,
+which is <code>"left"</code> in LTR languages and <code>"right"</code> for RTL languages.</dd>
+<dt><em>function</em> GLabel::<span class="declaration">setTextAlign</span>(alignment)</dt>
+<dd>Sets this GLabel's horizontal text alignment (see <a href="#getTextAlign">GLabel::getTextAlign</a> for options).</dd>
+<dt id="getBaseline"><em>function</em> GLabel::<span class="declaration">getBaseline</span>()</dt>
+<dd><strong>Returns</strong>: the current baseline alignment (roughly, vertical alignment) of this font. Can take on
+any of the values noted <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/textBaseline#value">here</a>,
+notably: <code>"top"</code>, <code>"bottom"</code>, and <code>"middle"</code>. The default value is <code>"alphabetic"</code>.</dd>
+<dt><em>function</em> GLabel::<span class="declaration">setBaseline</span>(baselineAlignment)</dt>
+<dd>Sets this GLabel's baseline alignment (see <a href="#getBaseline">GLabel::getBaseline</a> for options).</dd>
 <dt><em>function</em> GLabel::<span class="declaration">getAscent</span>()</dt>
 <dd><strong>Returns:</strong> The ascent of this font, which is the maximum distance characters 
 extend above the baseline.  In JavaScript, this value is estimated from
