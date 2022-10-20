@@ -2,82 +2,82 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://jdkula.github.io/jsgraphics-docs/</loc>
-         <lastmod>2022-10-12</lastmod>
+         <lastmod>2022-10-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jdkula.github.io/jsgraphics-docs/gmath/</loc>
-         <lastmod>2022-10-12</lastmod>
+         <lastmod>2022-10-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jdkula.github.io/jsgraphics-docs/gobject/</loc>
-         <lastmod>2022-10-12</lastmod>
+         <lastmod>2022-10-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jdkula.github.io/jsgraphics-docs/gwindow/</loc>
-         <lastmod>2022-10-12</lastmod>
+         <lastmod>2022-10-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jdkula.github.io/jsgraphics-docs/gobjects/garc/</loc>
-         <lastmod>2022-10-12</lastmod>
+         <lastmod>2022-10-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jdkula.github.io/jsgraphics-docs/gobjects/gcompound/</loc>
-         <lastmod>2022-10-12</lastmod>
+         <lastmod>2022-10-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jdkula.github.io/jsgraphics-docs/gobjects/gimage/</loc>
-         <lastmod>2022-10-12</lastmod>
+         <lastmod>2022-10-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jdkula.github.io/jsgraphics-docs/gobjects/glabel/</loc>
-         <lastmod>2022-10-12</lastmod>
+         <lastmod>2022-10-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jdkula.github.io/jsgraphics-docs/gobjects/gline/</loc>
-         <lastmod>2022-10-12</lastmod>
+         <lastmod>2022-10-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jdkula.github.io/jsgraphics-docs/gobjects/goval/</loc>
-         <lastmod>2022-10-12</lastmod>
+         <lastmod>2022-10-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jdkula.github.io/jsgraphics-docs/gobjects/gpolygon/</loc>
-         <lastmod>2022-10-12</lastmod>
+         <lastmod>2022-10-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jdkula.github.io/jsgraphics-docs/gobjects/grect/</loc>
-         <lastmod>2022-10-12</lastmod>
+         <lastmod>2022-10-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jdkula.github.io/jsgraphics-docs/util/gdimension/</loc>
-         <lastmod>2022-10-12</lastmod>
+         <lastmod>2022-10-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jdkula.github.io/jsgraphics-docs/util/gpoint/</loc>
-         <lastmod>2022-10-12</lastmod>
+         <lastmod>2022-10-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jdkula.github.io/jsgraphics-docs/util/grectangle/</loc>
-         <lastmod>2022-10-12</lastmod>
+         <lastmod>2022-10-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jdkula.github.io/jsgraphics-docs/util/gtransform/</loc>
-         <lastmod>2022-10-12</lastmod>
+         <lastmod>2022-10-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
