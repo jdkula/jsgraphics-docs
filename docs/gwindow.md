@@ -43,6 +43,7 @@ Methods
     mouseup    | Invoked when a user's mouse button releases on the GWindow.
     drag       | Invoked when a user is holding down their mouse button, and moving their mouse.
     mousemove  | Invoked whenever the user moves their cursor.
+    keydown    | Invoked whenever a user clicks a keyboard key
 
 *function* GWindow::@d.add(gObject[, x, y])
 :   Adds the specified @p.gObject to the window at the location previously
